@@ -16,14 +16,12 @@ var Stack = function() {
       return size;
     } else {
       size--;
-    }
     
-    var itemRemoved = storage[size];
-    console.log(storage[size])
-
-    delete storage[size];
-
-    return itemRemoved;
+    
+      var itemRemoved = storage[size];
+      delete storage[size];
+      return itemRemoved;
+    }
   };
 
   someInstance.size = function() {

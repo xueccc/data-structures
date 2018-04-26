@@ -26,7 +26,7 @@ var queueMethods = {
   	if(this.count === 0){
   	  return;
   	} else {
-  	  console.log(this.storage[this.firstItemCount])
+
   	  var value = this.storage[this.firstItemCount];
   	  delete this.storage[this.firstItemCount];
   	  this.count--;
